@@ -1,0 +1,47 @@
+.home-screen {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  background-color: #282c34;
+  flex-direction: column;
+
+  img {
+    max-width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+}
+
+.name-screen {
+  padding-top: 30px;
+  input {
+    border: 0;
+    padding: 20px;
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  select {
+    border: 0;
+    padding: 20px;
+    font-size: 17px;
+    line-height: normal;
+    margin-left: 10px;
+  }
+}
+
+  button {
+    padding: 20px;
+    font-size: 18px;
+    line-height: normal;
+    border: 0;
+    margin-top: 10px;
+  }
+

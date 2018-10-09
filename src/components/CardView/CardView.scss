@@ -1,0 +1,52 @@
+.flip-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  width: 225px;
+  height: 300px;
+  margin: 10px;
+  box-sizing: border-box;
+
+  .flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+
+    position: relative;
+
+    .clicked.back {
+      transform: rotateY(0deg);
+    }
+
+    .clicked.front {
+      transform: rotateY(180deg);
+    }
+
+    .front, .back {
+      width: 225px;
+      height: 300px;
+      margin: 10px;
+      box-sizing: border-box;
+      backface-visibility: hidden;
+      transition: 0.6s;
+      transform-style: preserve-3d;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .front {
+      z-index: 2;
+      transform: rotateY(0deg);
+    }
+
+    .back {
+      transform: rotateY(-180deg);
+    }
+
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+
+

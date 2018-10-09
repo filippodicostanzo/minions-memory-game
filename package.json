@@ -1,8 +1,11 @@
 {
   "name": "minions-memory-game",
+  "author": "Filippo Di Costanzo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "lodash": "^4.17.11",
+    "node-sass": "^4.9.3",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
     "react-scripts": "2.0.4"
